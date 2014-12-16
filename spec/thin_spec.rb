@@ -1,7 +1,14 @@
 require 'spec_helper'
 
-describe "The Thing" do
-  it "is a thing" do
+describe TheThing do
+
+  it "is awesome" do
     expect(TheThing).to be_awesome
   end
+
+  it "can rot" do
+    TheThing.rot!
+    expect(TheThing).not_to be_awesome
+  end
+
 end
